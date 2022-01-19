@@ -2055,6 +2055,10 @@ body {
     height: 600px;
   }
 
+  .certificate .box-content img {
+    height: 220px;
+  }
+
   .marketing-top .item {
     padding: 25px;
   }
