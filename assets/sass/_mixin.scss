@@ -1,0 +1,85 @@
+@mixin maxWidth($q) {
+    @media screen and (max-width: $q) {
+        @content;
+    }
+}
+@mixin minWidth($q) {
+    @media screen and (min-width: $q) {
+        @content;
+    }
+}
+@mixin fw-500 {
+    font-weight: 500;
+}
+@mixin fw-300 {
+    font-weight: 300;
+}
+@mixin fw-700 {
+    font-weight: 700;
+}
+@mixin fw-800 {
+    font-weight: 900;
+}
+@mixin fw-900 {
+    font-weight: 900;
+}
+@mixin fz-24{
+    font-size: 24px;
+    @include maxWidth(768px){
+        font-size: 20px;
+    }
+}
+@mixin fz-30{
+    font-size: 30px;
+    @include maxWidth(768px){
+        font-size: 24px;
+    }
+    @include maxWidth(768px){
+        font-size: 22px;
+    }
+}
+@mixin fz-32{
+    font-size: 32px;
+    @include maxWidth(1024px){
+        font-size: 28px;
+    }
+    @include maxWidth(768px){
+        font-size: 26px;
+    }
+    @include maxWidth(576){
+        font-size: 24px;
+    }
+}
+@mixin fz-36{
+    font-size: 36px;
+    @include maxWidth(768px){
+        font-size: 28px;
+    }
+    @include maxWidth(576px){
+        font-size: 26px;
+    }
+}
+@mixin text-truncate($q) {
+    display: -webkit-box;
+    -webkit-line-clamp: $q;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+@mixin input-radius {
+    border: none;
+    border-radius: 56px;
+    background: transparent;
+    height: auto;
+    &:focus{
+        box-shadow: none;
+    }
+}
+@mixin before-title {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -9px;
+    background: $text-pink;     
+}

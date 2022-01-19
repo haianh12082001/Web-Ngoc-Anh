@@ -1,0 +1,50 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+    outline: none;
+}
+input {
+    line-height: normal;
+    outline: none;
+    box-shadow: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+img {
+   
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    // display: block;
+}
+.form-control:focus{
+    border-color: transparent;
+    box-shadow: 0 0 0 0.1rem rgba(53, 61, 68, 0.14);
+
+}
